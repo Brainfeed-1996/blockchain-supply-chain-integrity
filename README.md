@@ -1,4 +1,8 @@
-# Blockchain Supply Chain Integrity
+# 🔗 Blockchain Supply Chain Integrity
+
+[![Go](https://img.shields.io/badge/Language-Go-00ADD8.svg)](https://golang.org)
+[![Blockchain](https://img.shields.io/badge/Tech-Blockchain-blue.svg)]()
+[![Integrity](https://img.shields.io/badge/Status-Validated-brightgreen.svg)]()
 
 High-integrity ledger system built with Go for industrial supply chains.
 
