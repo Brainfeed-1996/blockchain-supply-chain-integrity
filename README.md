@@ -4,7 +4,8 @@
 [![Blockchain](https://img.shields.io/badge/Tech-Blockchain-blue.svg)]()
 [![Integrity](https://img.shields.io/badge/Status-Validated-brightgreen.svg)]()
 
-High-integrity ledger system built with Go for industrial supply chains.
+---
+Part of the [Industrial Portfolio 2026](https://github.com/Brainfeed-1996/industrial-portfolio-2026) ecosystem.
 
 ## Architecture
 - **Merkle Tree**: Core validation structure.
