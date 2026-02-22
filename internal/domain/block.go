@@ -5,6 +5,20 @@ import (
 	"fmt"
 )
 
+// ZKPProof represents a mock Zero-Knowledge Proof for supply chain verification.
+type ZKPProof struct {
+	Proof     []byte
+	PublicInput []byte
+}
+
+func (p *ZKPProof) Verify() bool {
+	// Mock ZKP verification logic. 
+	// In a real implementation, this would use a library like gnark or bellman.
+	// Logic: If the SHA256 of the proof matches a specific property derived from PublicInput.
+	h := sha256.Sum256(p.Proof)
+	return fmt.Sprintf("%x", h[:])[0:4] == "0000" // Simplified proof-of-work style ZKP mock
+}
+
 type Block struct {
 	Index        int
 	Timestamp    int64
@@ -14,6 +28,7 @@ type Block struct {
 	Signature    []byte
 	Validator    string
 	MerkleRoot   string
+	ZKPProof     *ZKPProof // Integrated ZKP
 }
 
 func (b *Block) CalculateHash() string {

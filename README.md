@@ -9,8 +9,14 @@ Part of the [Industrial Portfolio 2026](https://github.com/Brainfeed-1996/indust
 
 ## Architecture
 - **Merkle Tree**: Core validation structure.
+- **ZKP Verification**: Zero-Knowledge Proof logic for privacy-preserving audits.
 - **Cryptographic Signing**: Ensures block authenticity.
 - **Storage Adapters**: Pluggable storage for ledger data.
+
+## Deployment
+Production-ready Docker configuration included.
+- **Live Ledger:** [https://supply-chain.brainfeed.tech](https://supply-chain.brainfeed.tech)
+- **Vercel Frontend:** [https://blockchain-sc-ui.vercel.app](https://blockchain-sc-ui.vercel.app)
 
 ## SRE/Monitoring
 - Ledger health checks and block propagation monitoring.
